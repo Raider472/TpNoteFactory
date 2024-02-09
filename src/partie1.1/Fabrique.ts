@@ -1,10 +1,6 @@
+import { OptionRobot } from "../partie1.2/Interface";
+import { Robot } from "./Interface";
 import { RobotDomestique, RobotIndustriel, RobotMedical } from "./Robot";
-
-export interface Robot {
-    assembler(): void;
-    activer(): void;
-    travailler(): void;
-}
 
 export interface FabriquerRobot {
     createRobot(): Robot;
